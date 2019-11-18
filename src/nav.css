@@ -1,4 +1,9 @@
 .navbar {
   z-index: 2;
   font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+.darkMode {
+  background-color: var(--primary-color);
 }

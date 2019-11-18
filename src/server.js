@@ -1,6 +1,11 @@
-function calculateBill(total, tax = 0.13, tip = 0.15) {
-  return total + total * tax + total * tip;
+function changeNavColor() {
+  let scroll = window.scrollY;
+  const navOffset = document.querySelector("#prices").offsetTop;
+  const nav = document.querySelector("nav");
+  if (scroll > navOffset - nav.offsetHeight) {
+    return nav.classList.add("darkMode");
+  } else {
+    return nav.classList.remove("darkMode");
+  }
 }
-
-const totalBill = calculateBill(100, undefined, 0.25);
-console.log(totalBill);
+window.addEventListener("scroll", changeNavColor);
