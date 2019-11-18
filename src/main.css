@@ -40,3 +40,12 @@ html {
   opacity: 0.7;
   z-index: 1;
 }
+
+.container > .col-6 {
+  max-height: 0px;
+  overflow: hidden;
+  transition: 1s;
+}
+.container > .col-6.show {
+  max-height: 100%;
+}

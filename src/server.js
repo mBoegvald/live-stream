@@ -9,3 +9,7 @@ function changeNavColor() {
   }
 }
 window.addEventListener("scroll", changeNavColor);
+
+setTimeout(function() {
+  document.querySelector(".container>.col-6").classList.add("show");
+}, 1000);
