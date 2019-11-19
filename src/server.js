@@ -1,8 +1,8 @@
 function changeNavColor() {
   let scroll = window.scrollY;
-  const navOffset = document.querySelector("#prices").offsetTop;
   const nav = document.querySelector("nav");
-  if (scroll > nav.offsetHeight) {
+  const navOffset = document.querySelector("nav").offsetHeight;
+  if (scroll > navOffset) {
     return nav.classList.add("darkMode");
   } else {
     return nav.classList.remove("darkMode");

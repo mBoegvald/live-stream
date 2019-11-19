@@ -1,0 +1,35 @@
+.brandon-thin {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 100;
+}
+
+.brandon-thin-italic {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.brandon-light {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 300;
+}
+
+.brandon-light-italic {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.brandon-regular {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+}
+
+.brandon-bold {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 700;
+}
+
+.text-yellow {
+  color: var(--secondary-color);
+}
