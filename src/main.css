@@ -2,6 +2,7 @@
   --primary-color: rgb(58, 58, 58);
   --secondary-color: #b7a15b;
   --black: #000;
+  --white: #fff;
 }
 
 html {
@@ -58,4 +59,24 @@ section {
 }
 .container > .col-6.show {
   max-height: 100%;
+}
+
+/* ***************** SVGS **************** */
+
+.whiteRectangle {
+  position: absolute;
+  z-index: 2;
+  right: -13rem;
+  bottom: -9rem;
+  transform: rotateZ(157deg);
+  fill: var(--white);
+}
+
+.blackRectangle {
+  position: absolute;
+  z-index: 1000;
+  left: -13rem;
+  transform: rotateZ(-157deg);
+  fill: var(--black);
+  opacity: 0.7;
 }
