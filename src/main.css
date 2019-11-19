@@ -1,5 +1,5 @@
 :root {
-  --primary-color: blue;
+  --primary-color: rgb(58, 58, 58);
   --secondary-color: yellow;
 }
 
@@ -12,6 +12,8 @@ html {
   height: 100vh;
   min-height: 100vh;
   width: 100vw;
+}
+section {
   overflow: hidden;
 }
 
@@ -44,7 +46,14 @@ html {
 .container > .col-6 {
   max-height: 0px;
   overflow: hidden;
-  transition: 1s;
+  transition: 2s;
+  z-index: 2;
+}
+.container > .col-6 > h1 {
+  font-size: 2.5rem;
+}
+.container > .col-6 > p {
+  font-size: 1.2rem;
 }
 .container > .col-6.show {
   max-height: 100%;
