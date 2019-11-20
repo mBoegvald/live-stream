@@ -8,7 +8,7 @@ function changeNavColor() {
     return nav.classList.remove("darkMode");
   }
 }
-global.addEventListener("scroll", changeNavColor);
+document.addEventListener("scroll", changeNavColor);
 
 setTimeout(function() {
   document.querySelector(".container>.col-6").classList.add("show");
