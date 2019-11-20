@@ -67,6 +67,14 @@ section {
 #showroom {
   background-color: var(--grey);
   height: 100%;
+  position: relative;
+}
+
+/* About */
+
+#about {
+  height: 100%;
+  position: relative;
 }
 
 /* ***************** SVGS **************** */
