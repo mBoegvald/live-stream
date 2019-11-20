@@ -10,11 +10,15 @@ fetch("../content/test.json")
   .catch(err => {
     console.error(err);
   });
+
 let swiper = new Swiper(".swiper-container", {
   slidesPerView: 1,
   slidesPerGroup: 1,
   loop: true,
   centeredSlides: true,
+  autoplay: {
+    delay: 5000
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
