@@ -6,6 +6,8 @@
   --grey: rgb(32, 32, 32);
 }
 
+/* HUSK AT GØR COMPATIBLE MED IE */
+
 html {
   scroll-behavior: smooth;
 }
@@ -46,6 +48,10 @@ section {
   z-index: 1;
 }
 
+#products {
+  height: 80vh;
+}
+
 .container > .col-6 {
   max-height: 0px;
   overflow: hidden;
@@ -66,41 +72,13 @@ section {
 
 #showroom {
   background-color: var(--grey);
-  height: 100%;
   position: relative;
-}
-
-/* About */
-
-#about {
-  height: 100%;
-  position: relative;
-}
-
-/* ***************** SVGS **************** */
-
-.whiteRectangle {
-  position: absolute;
-  z-index: 2;
-  right: -13rem;
-  bottom: -9rem;
-  transform: rotateZ(157deg);
-  fill: var(--white);
-}
-
-.blackRectangle {
-  position: absolute;
-  z-index: 2;
-  left: -13rem;
-  transform: rotateZ(-157deg);
-  fill: var(--grey);
-  opacity: 1;
 }
 
 /* SWIPER */
 
 .swiper-container {
-  width: 80%;
+  width: 100%;
   height: auto;
   overflow: hidden;
   z-index: 3;
@@ -118,4 +96,36 @@ section {
 .swiper-button-prev,
 .swiper-button-next {
   color: var(--secondary-color);
+}
+
+/* About */
+
+#about {
+  position: relative;
+}
+
+/* ***************** SVGS **************** */
+
+.whiteRectangle {
+  position: absolute;
+  z-index: 2;
+  right: -13rem;
+  bottom: -9rem;
+  transform: rotateZ(157deg);
+  -ms-transform: rotateZ(157deg);
+  -moz-transform: rotateZ(157deg);
+  -webkit-transform: rotateZ(157deg);
+  fill: var(--white);
+}
+
+.blackRectangle {
+  position: absolute;
+  z-index: 2;
+  left: -13rem;
+  transform: rotateZ(-157deg);
+  -ms-transform: rotateZ(-157deg);
+  -moz-transform: rotateZ(-157deg);
+  -webkit-transform: rotateZ(-157deg);
+  fill: var(--grey);
+  opacity: 1;
 }
