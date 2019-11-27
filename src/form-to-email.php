@@ -11,7 +11,7 @@ $message = $_POST['message'];
 
 //validation
 
-if(empty($name)||empty($customer_email)
+if(empty($name)||empty($customer_email))
 {
   echo "Name and Email are mandatory!";
   exit;
@@ -19,10 +19,10 @@ if(empty($name)||empty($customer_email)
 
 $email_from = "noreply@mboegvald.dk";
 $email_subject = "New Form Submission";
-$email_body = "You have received a new message from $name.\n". " Details:\n Name: $name \n Email: $customer_email \n Message: $message";
+$email_body = "This is a test email, here's the info you typed in.\n". " Details:\n Name: $name \n Email: $customer_email \n Message: $message";
 
 
-$to = "miklasbogvald@gmail.com";
+$to = $customer_email;
 $headers = "From: $email_from \r\n";
 
 // Configure SMTP Settings
