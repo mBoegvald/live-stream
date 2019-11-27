@@ -151,7 +151,7 @@
     <section id="showroom">
       <div class="container justify-content-around my-50">
         <h1 class="brandon-thin text-yellow text-center">Lorem Overskrift</h1>
-        <div class="swiper-container">
+        <div class="swiper-container mt-50">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -167,11 +167,11 @@
       </svg>
     </section>
     <section id="about">
-      <div class="container mt-50 mb-50">
+      <div class="container my-50">
         <div class="container-fluid">
-          <h1 class="brandon-thin text-yellow text-center">Lorem Overskrift</h1>
+          <h1 class="brandon-thin text-grey text-center">Lorem Overskrift</h1>
         </div>
-        <div class="row justify-content-around">
+        <div class="row justify-content-around mt-50">
           <div class="col-6">
             <h1>lorem</h1>
             <p>
@@ -183,17 +183,24 @@
           </div>
           <div class="col-6">
             <h1>lorem</h1>
-            <form class="needs-validation" novalidate>
+            <form
+              class="needs-validation"
+              novalidate
+              method="post"
+              action="form-to-email.php"
+            >
               <input
                 type="text"
                 class="form-control"
                 placeholder="Navn"
+                name="name"
                 required
               />
               <input
                 type="email"
                 class="form-control mt-3"
                 placeholder="Navn@eksempel.dk"
+                name="email"
                 required
               />
               <textarea
@@ -201,9 +208,10 @@
                 rows="3"
                 style="resize: none;"
                 placeholder="Besked"
+                name="message"
                 required
               ></textarea>
-              <button type="submit" class="btn btn-primary mt-3">
+              <button type="submit" name="submit" class="btn btn-primary mt-3">
                 Send besked
               </button>
             </form>
@@ -216,7 +224,8 @@
     </section>
 
     <script src="../node_modules/swiper/js/swiper.min.js"></script>
-    <script src="swiper.js"></script>
-    <script src="server.js"></script>
+    <script src="../dist/server.js"></script>
+    <script src="../dist/weather.js"></script>
+    <script src="../dist/swiper.js"></script>
   </body>
 </html>

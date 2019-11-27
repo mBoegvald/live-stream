@@ -33,3 +33,7 @@
 .text-yellow {
   color: var(--secondary-color);
 }
+
+.text-grey {
+  color: var(--grey);
+}
