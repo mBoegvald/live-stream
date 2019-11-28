@@ -1,9 +1,9 @@
-fetch("../content/test.json")
+fetch("http://fra-oven.dk/wordpress/wp-json/acf/v3/slideshow_post/")
   .then(data => data.json())
   .then(data => {
     console.log(data);
     for (let i = 0; i < data.length; i++) {
-      let element = `<div class="swiper-slide"><img src="${data[i].img}"/></div>`;
+      let element = `<div class="swiper-slide"><img src="${data[i].acf.pic}"/></div>`;
       swiper.appendSlide(element);
     }
   })
