@@ -32,9 +32,15 @@ function weather() {
         $("#temp").html(`${temp}°`);
         $("#minutely").html(`${summary}`);
 
-        if (summary === "Skyet") {
-          $(".weather-holder").attr("src", "../content/svg_sol.svg");
-        }
+        fetch("../content/test.json")
+          .then(data => data.json())
+          .then(weatherData => {
+            weatherData.forEach(weather => {
+              if (summary === weather.weatherType) {
+                $(".weather-holder").attr(`src`, `../content/${weather.img}`);
+              }
+            });
+          });
       }
     );
   }
