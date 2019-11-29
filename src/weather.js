@@ -31,6 +31,10 @@ function weather() {
         let summary = data.currently.summary;
         $("#temp").html(`${temp}°`);
         $("#minutely").html(`${summary}`);
+
+        if (summary === "Skyet") {
+          $(".weather-holder").attr("src", "../content/svg_sol.svg");
+        }
       }
     );
   }

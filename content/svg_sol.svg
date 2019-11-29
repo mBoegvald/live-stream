@@ -1,0 +1,21 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.85 169.89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fcfc03;
+      }
+    </style>
+  </defs>
+  <title>svg_sol</title>
+  <g>
+    <circle class="cls-1" cx="85.39" cy="84.89" r="36"/>
+    <rect class="cls-1" x="34" y="20.1" width="12.73" height="39.54" rx="4.9" transform="translate(-16.37 40.22) rotate(-45)"/>
+    <rect class="cls-1" x="79" y="3.1" width="12.73" height="39.54" rx="4.9"/>
+    <rect class="cls-1" x="124" y="20.1" width="12.73" height="39.54" rx="4.9" transform="translate(194.35 160.24) rotate(-135)"/>
+    <rect class="cls-1" x="141" y="65.1" width="12.73" height="39.54" rx="4.9" transform="translate(62.5 232.23) rotate(-90)"/>
+    <rect class="cls-1" x="125" y="111.1" width="12.73" height="39.54" rx="4.9" transform="translate(-54.06 131.22) rotate(-45)"/>
+    <rect class="cls-1" x="79" y="127.1" width="12.73" height="39.54" rx="4.9"/>
+    <rect class="cls-1" x="34" y="110.1" width="12.73" height="39.54" rx="4.9" transform="translate(103.65 9.5) rotate(45)"/>
+    <rect class="cls-1" x="17" y="65.1" width="12.73" height="39.54" rx="4.9" transform="translate(108.23 61.5) rotate(90)"/>
+  </g>
+</svg>
