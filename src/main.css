@@ -98,6 +98,36 @@ section {
   color: var(--secondary-color);
 }
 
+.slide-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.2s linear;
+  background-color: var(--black);
+}
+
+.slide-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: var(--white);
+  font-size: 3.5rem;
+  opacity: 0;
+  transition: 0.2s linear;
+}
+
+.swiper-container:hover .slide-overlay {
+  opacity: 0.7;
+}
+
+.swiper-container:hover .slide-text {
+  opacity: 1;
+}
+
 /* About */
 
 #about {

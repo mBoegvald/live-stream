@@ -1,0 +1,16 @@
+footer {
+  color: var(--white);
+}
+
+footer h1 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  border-bottom: 1px var(--secondary-color) solid;
+}
+
+/* Weather */
+
+#temp,
+#minutely {
+  font-size: 1.25rem;
+}

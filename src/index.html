@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="margins.css" />
+    <link rel="stylesheet" href="footer.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -223,8 +224,32 @@
       </svg>
     </section>
 
+    <footer class="darkMode p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Information</h1>
+            <ul>
+              <li><a href="#">Klokkedybet 22, 2730 Herlev</a></li>
+              <li><a href="#">Email: info@fra-oven.dk</a></li>
+              <li><a href="#">Tel: 42373953</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h1>Er det dronevejr?</h1>
+            <div class="d-flex justify-content-between">
+              <p id="temp"></p>
+              <p id="minutely"></p>
+            </div>
+          </div>
+          <div class="col"><h1>Trustpilot?</h1></div>
+        </div>
+      </div>
+    </footer>
+
     <script src="../node_modules/swiper/js/swiper.min.js"></script>
     <script src="server.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="weather.js"></script>
     <script src="swiper.js"></script>
   </body>
