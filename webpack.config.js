@@ -12,6 +12,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js"
   },
+  watch: true,
   module: {
     rules: [
       {
@@ -19,6 +20,7 @@ module.exports = {
         exclude: [/node_modules/],
         loader: "babel-loader"
       },
+
       {
         test: /\.css$/,
         exclude: [/node_modules/],

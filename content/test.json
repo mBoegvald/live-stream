@@ -2,13 +2,5 @@
   {
     "img": "svg_sol.svg",
     "weatherType": "Skyet"
-  },
-  {
-    "img": "https://images.pexels.com/photos/219998/pexels-photo-219998.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    "text": "hover"
-  },
-  {
-    "img": "https://images.pexels.com/photos/219998/pexels-photo-219998.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    "text": "hover"
   }
 ]
