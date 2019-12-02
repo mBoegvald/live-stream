@@ -24,19 +24,6 @@ export default class Weather {
             let summary = data.currently.summary;
             $("#temp").html(`${temp}°`);
             $("#minutely").html(`${summary}`);
-
-            fetch("../content/test.json")
-              .then(data => data.json())
-              .then(weatherData => {
-                weatherData.forEach(weather => {
-                  if (summary === weather.weatherType) {
-                    $(".weather-holder").attr(
-                      `src`,
-                      `../content/${weather.img}`
-                    );
-                  }
-                });
-              });
           }
         );
       }

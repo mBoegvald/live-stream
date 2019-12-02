@@ -120,7 +120,7 @@ exports.push([module.i, "@import url(/src/css/nav.css);", ""]);
 exports.push([module.i, "@import url(/src/css/footer.css);", ""]);
 
 // Module
-exports.push([module.i, "\n", ""]);
+exports.push([module.i, "\r\n", ""]);
 
 
 
@@ -1003,15 +1003,6 @@ var Weather = function Weather() {
         var summary = data.currently.summary;
         $("#temp").html("".concat(temp, "\xB0"));
         $("#minutely").html("".concat(summary));
-        fetch("../content/test.json").then(function (data) {
-          return data.json();
-        }).then(function (weatherData) {
-          weatherData.forEach(function (weather) {
-            if (summary === weather.weatherType) {
-              $(".weather-holder").attr("src", "../content/".concat(weather.img));
-            }
-          });
-        });
       });
     }
 
