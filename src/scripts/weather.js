@@ -22,8 +22,13 @@ export default class Weather {
           function(data) {
             let temp = Math.round(data.currently.temperature);
             let summary = data.currently.summary;
+            let iconName = data.currently.icon.replace(/-/g, "_").toUpperCase();
+            console.log(iconName);
             $("#temp").html(`${temp}°`);
             $("#minutely").html(`${summary}`);
+            var skycons = new Skycons({ color: "white" });
+            skycons.set("weatherIcon", iconName);
+            skycons.play();
           }
         );
       }
@@ -32,7 +37,6 @@ export default class Weather {
         location.innerHTML = "Unable to retrieve your location";
       }
     }
-
     weather();
   }
 }
