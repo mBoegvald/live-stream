@@ -1,32 +1,32 @@
 {
-  "name": "fraoven",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/server.js",
+  "name": "fra-oven",
+  "version": "2.0.1",
   "scripts": {
-    "start": "nodemon --exec babel-node src/server.js",
-    "build": "babel src --out-dir dist",
-    "serve": "node dist/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode=development",
+    "prod": "webpack --mode=production"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mBoegvald/4semEksamen.git"
-  },
+  "description": "",
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mBoegvald/4semEksamen/issues"
-  },
-  "homepage": "https://github.com/mBoegvald/4semEksamen#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.7.0",
-    "@babel/core": "^7.7.2",
-    "@babel/node": "^7.7.0",
-    "@babel/preset-env": "^7.7.1",
-    "nodemon": "^1.19.4"
-  },
+  "license": "Apache-2.0",
+  "repository": "",
   "dependencies": {
-    "swiper": "^5.2.0"
+    "@babel/runtime": "^7.2.0",
+    "swiper": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-function-bind": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "file-loader": "^0.8.5",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
   }
 }
