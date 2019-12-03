@@ -49,7 +49,7 @@ section {
 }
 
 #products {
-  height: 90vh;
+  height: 100%;
 }
 
 .container > .col-6 {
@@ -68,6 +68,9 @@ section {
   max-height: 100%;
 }
 
+h1 {
+  z-index: 1;
+}
 /* ShowRoom */
 
 #showroom {
@@ -85,12 +88,11 @@ section {
   border-radius: 2rem;
 }
 .swiper-wrapper {
-  height: 80vh;
+  height: 100%;
   width: 100%;
 }
 .swiper-slide img {
   width: 100%;
-  height: 100%;
 }
 
 .swiper-button-prev,
@@ -150,12 +152,11 @@ section {
 
 .blackRectangle {
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   left: -13rem;
   transform: rotateZ(-157deg);
   -ms-transform: rotateZ(-157deg);
   -moz-transform: rotateZ(-157deg);
   -webkit-transform: rotateZ(-157deg);
   fill: var(--grey);
-  opacity: 1;
 }
