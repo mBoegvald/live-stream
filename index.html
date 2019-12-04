@@ -199,6 +199,18 @@
                 name="email"
                 required
               />
+              <select
+                value="null"
+                name="product"
+                class="form-control mt-3"
+                required
+              >
+                <option>Ejedomsfoto</option>
+                <option>Luftfoto</option>
+                <option>360° panorama</option>
+                <option>Inspektion</option>
+                <option>Byggeplads</option>
+              </select>
               <textarea
                 class="form-control mt-3"
                 rows="3"
@@ -233,10 +245,20 @@
           <div class="col">
             <h1>Er det dronevejr?</h1>
             <div class="d-flex justify-content-between">
-              <p id="temp"></p>
-              <p id="minutely"></p>
+              <div class="col">
+                <div class="row">
+                  <p id="temp"></p>
+                  <canvas
+                    class=" align-top"
+                    id="weatherIcon"
+                    width="30"
+                    src=""
+                    alt="Vejret lige nu"
+                  ></canvas>
+                </div>
+              </div>
+              <div class="col"><p id="minutely"></p></div>
             </div>
-            <canvas id="weatherIcon" src="" alt="Vejret lige nu"></canvas>
           </div>
           <div class="col"><h1>Trustpilot?</h1></div>
         </div>

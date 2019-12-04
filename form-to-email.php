@@ -8,7 +8,6 @@ $name = $_POST['name'];
 $customer_email = $_POST['email'];
 $message = $_POST['message'];
 
-
 //validation
 
 if(empty($name)||empty($customer_email))
