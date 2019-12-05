@@ -48,8 +48,11 @@ section {
   z-index: 1;
 }
 
-#products {
-  height: 100%;
+.btn {
+  background-color: var(--secondary-color) !important;
+  color: var(--white) !important;
+  text-transform: uppercase;
+  padding: 0.7rem 2rem !important;
 }
 
 .container > .col-6 {

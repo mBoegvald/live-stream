@@ -1,0 +1,35 @@
+.btn:hover {
+  background-color: #bbae83 !important;
+}
+
+.hover1 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.hover1,
+.hover1:hover,
+.hover1:focus,
+.hover1:active {
+  text-decoration: none;
+}
+
+.hover1::after {
+  content: "";
+  position: absolute;
+}
+.hover1::after {
+  top: 90%;
+  height: 2px !important;
+  width: 40%;
+  left: 30%;
+  background-color: var(--white);
+  transition: 0.3s ease-out all 0.1s;
+}
+
+.btn:hover .hover1:after {
+  width: 90%;
+  left: 5%;
+  transition: 0.3s ease all;
+}
