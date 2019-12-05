@@ -18,7 +18,7 @@ export default class Weather {
             latitude +
             "," +
             longitude +
-            "?lang=da&units=auto&callback=?",
+            "?lan=da&units=auto&callback=?",
           function(data) {
             let temp = Math.round(data.currently.temperature);
             let summary = data.currently.summary;

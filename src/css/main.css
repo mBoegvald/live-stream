@@ -8,8 +8,10 @@
 
 /* HUSK AT GØR COMPATIBLE MED IE */
 
-html {
+html,
+body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -55,19 +57,19 @@ section {
   padding: 0.7rem 2rem !important;
 }
 
-.container > .col-6 {
+.container > .heading {
   max-height: 0px;
   overflow: hidden;
   transition: 2s;
   z-index: 2;
 }
-.container > .col-6 > h1 {
+.container > .heading > h1 {
   font-size: 3rem;
 }
-.container > .col-6 > p {
+.container > .heading > p {
   font-size: 1.2rem;
 }
-.container > .col-6.show {
+.container > .heading.show {
   max-height: 100%;
 }
 

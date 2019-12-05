@@ -919,7 +919,7 @@ var ShowHeader = function ShowHeader() {
   _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, ShowHeader);
 
   setTimeout(function () {
-    document.querySelector(".container>.col-6").classList.add("show");
+    document.querySelector(".heading").classList.add("show");
   }, 1000);
 };
 
@@ -999,7 +999,7 @@ var Weather = function Weather() {
     function success(position) {
       var latitude = position.coords.latitude;
       var longitude = position.coords.longitude;
-      $.getJSON(url + apiKey + "/" + latitude + "," + longitude + "?lang=da&units=auto&callback=?", function (data) {
+      $.getJSON(url + apiKey + "/" + latitude + "," + longitude + "?lan=da&units=auto&callback=?", function (data) {
         var temp = Math.round(data.currently.temperature);
         var summary = data.currently.summary;
         var iconName = data.currently.icon.replace(/-/g, "_").toUpperCase();

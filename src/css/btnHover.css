@@ -20,7 +20,7 @@
   position: absolute;
 }
 .hover1::after {
-  top: 90%;
+  top: 100%;
   height: 2px !important;
   width: 40%;
   left: 30%;
