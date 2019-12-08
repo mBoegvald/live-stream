@@ -23,6 +23,8 @@ export default class Weather {
             let temp = Math.round(data.currently.temperature);
             let summary = data.currently.summary;
             let iconName = data.currently.icon.replace(/-/g, "_").toUpperCase();
+            console.log(summary);
+
             console.log(iconName);
             $("#temp").html(`${temp}°`);
             $("#minutely").html(`${summary}`);

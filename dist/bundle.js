@@ -801,6 +801,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _FormValidation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./FormValidation */ "./src/scripts/FormValidation.js");
 /* harmony import */ var _ShowHeader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ShowHeader */ "./src/scripts/ShowHeader.js");
 /* harmony import */ var _Weather__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Weather */ "./src/scripts/Weather.js");
+/* harmony import */ var _preventRedirect__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./preventRedirect */ "./src/scripts/preventRedirect.js");
+
 
 
 
@@ -816,6 +818,7 @@ var App = function App() {
   new _FormValidation__WEBPACK_IMPORTED_MODULE_3__["default"]();
   new _ShowHeader__WEBPACK_IMPORTED_MODULE_4__["default"]();
   new _Weather__WEBPACK_IMPORTED_MODULE_5__["default"]();
+  new _preventRedirect__WEBPACK_IMPORTED_MODULE_6__["default"]();
 };
 
 
@@ -1003,6 +1006,7 @@ var Weather = function Weather() {
         var temp = Math.round(data.currently.temperature);
         var summary = data.currently.summary;
         var iconName = data.currently.icon.replace(/-/g, "_").toUpperCase();
+        console.log(summary);
         console.log(iconName);
         $("#temp").html("".concat(temp, "\xB0"));
         $("#minutely").html("".concat(summary));
@@ -1020,6 +1024,37 @@ var Weather = function Weather() {
   }
 
   weather();
+};
+
+
+
+/***/ }),
+
+/***/ "./src/scripts/preventRedirect.js":
+/*!****************************************!*\
+  !*** ./src/scripts/preventRedirect.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PrevenetRedirect; });
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var PrevenetRedirect = function PrevenetRedirect() {
+  _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0___default()(this, PrevenetRedirect);
+
+  $("form").submit(function () {
+    $.post($(this).attr("action"), function () {
+      var test = document.getElementById("test");
+      test.value = "Thank you";
+      localStorage.value = "ok";
+    });
+    return false; // prevent submitting the form
+  });
 };
 
 

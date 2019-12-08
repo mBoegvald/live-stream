@@ -3,6 +3,7 @@ import ChangeNavColor from "./ChangeNavColor";
 import FormValidation from "./FormValidation";
 import ShowHeader from "./ShowHeader";
 import Weather from "./Weather";
+import PreventRedirect from "./preventRedirect";
 
 export default class App {
   constructor() {
@@ -11,5 +12,6 @@ export default class App {
     new FormValidation();
     new ShowHeader();
     new Weather();
+    new PreventRedirect();
   }
 }

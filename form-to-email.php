@@ -23,7 +23,7 @@ $email_body = "This is a test email, here's the info you typed in.\n". " Details
 
 
 $to = $customer_email;
-$headers = "From: $email_from \r\n";
+$headers = "From: $customer_email";
 
 // Configure SMTP Settings
 ini_set('SMTP','send.one.com');
