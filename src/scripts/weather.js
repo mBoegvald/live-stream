@@ -1,7 +1,6 @@
 export default class Weather {
   constructor() {
     function weather() {
-      var location = document.getElementById("location");
       var apiKey = "ce4206500db0e67c73e3e4d2112e2687";
       var url = "https://api.forecast.io/forecast/";
 
@@ -18,8 +17,10 @@ export default class Weather {
             latitude +
             "," +
             longitude +
-            "?lan=da&units=auto&callback=?",
+            "?lang=da&units=auto&callback=?",
           function(data) {
+            console.log(data);
+
             let temp = Math.round(data.currently.temperature);
             let summary = data.currently.summary;
             let iconName = data.currently.icon.replace(/-/g, "_").toUpperCase();
@@ -36,7 +37,7 @@ export default class Weather {
       }
 
       function error() {
-        location.innerHTML = "Unable to retrieve your location";
+        $("#temp").html("Unable to retrieve your location");
       }
     }
     weather();
