@@ -1,4 +1,4 @@
-<?php 
+<?php
 if(!isset($_POST['submit']))
 {
   echo "error; you need to submit the form!";
@@ -23,7 +23,7 @@ $email_body = "This is a test email, here's the info you typed in.\n". " Details
 
 
 $to = $customer_email;
-$headers = "From: $customer_email";
+$headers = "From: $email_from";
 
 // Configure SMTP Settings
 ini_set('SMTP','send.one.com');

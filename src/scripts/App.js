@@ -1,9 +1,8 @@
-import Swiper from "./Swiper";
-import ChangeNavColor from "./ChangeNavColor";
-import FormValidation from "./FormValidation";
-import ShowHeader from "./ShowHeader";
-import Weather from "./Weather";
-import PreventRedirect from "./preventRedirect";
+import Swiper from "../scripts/Swiper";
+import ChangeNavColor from "../scripts/ChangeNavColor";
+import FormValidation from "../scripts/FormValidation";
+import ShowHeader from "../scripts/ShowHeader";
+import Weather from "../scripts/Weather";
 
 export default class App {
   constructor() {
@@ -12,6 +11,5 @@ export default class App {
     new FormValidation();
     new ShowHeader();
     new Weather();
-    new PreventRedirect();
   }
 }
