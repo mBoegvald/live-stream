@@ -122,7 +122,7 @@ exports.push([module.i, "@import url(/src/css/footer.css);", ""]);
 exports.push([module.i, "@import url(/src/css/btnHover.css);", ""]);
 
 // Module
-exports.push([module.i, "\r\n", ""]);
+exports.push([module.i, "/* @import url(\"https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css\"); */\r\n", ""]);
 
 
 
@@ -949,7 +949,7 @@ var Slider = function Slider() {
     return data.json();
   }).then(function (data) {
     for (var i = 0; i < data.length; i++) {
-      var element = "<div class=\"swiper-slide\"><img src=\"".concat(data[i].acf.pic, "\"/><div class=\"slide-overlay\"></div><h2 class=\"slide-text\">").concat(data[i].acf.text, "</h2></div>");
+      var element = "<div class=\"swiper-slide\"><img src=\"".concat(data[i].acf.pic, "\"/><div class=\"slide-overlay\"></div><h2 class=\"slide-text sans-regular\">").concat(data[i].acf.text, "</h2></div>");
       swiper.appendSlide(element);
     }
   })["catch"](function (err) {

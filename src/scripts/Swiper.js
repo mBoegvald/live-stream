@@ -4,7 +4,7 @@ export default class Slider {
       .then(data => data.json())
       .then(data => {
         for (let i = 0; i < data.length; i++) {
-          let element = `<div class="swiper-slide"><img src="${data[i].acf.pic}"/><div class="slide-overlay"></div><h2 class="slide-text">${data[i].acf.text}</h2></div>`;
+          let element = `<div class="swiper-slide"><img src="${data[i].acf.pic}"/><div class="slide-overlay"></div><h2 class="slide-text sans-regular">${data[i].acf.text}</h2></div>`;
           swiper.appendSlide(element);
         }
       })

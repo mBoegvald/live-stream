@@ -15,7 +15,6 @@ footer a {
 
 /* Weather */
 
-#temp,
-#minutely {
-  font-size: 1.25rem;
+#temp {
+  font-size: 2rem;
 }
