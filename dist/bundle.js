@@ -103,6 +103,111 @@ module.exports = _classCallCheck;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/btnHover.css":
+/*!********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/btnHover.css ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".btn:hover {\r\n  background-color: #bbae83 !important;\r\n}\r\n\r\n.hover1 {\r\n  position: relative;\r\n  display: inline-block;\r\n  text-align: center;\r\n}\r\n\r\n.hover1,\r\n.hover1:hover,\r\n.hover1:focus,\r\n.hover1:active {\r\n  text-decoration: none;\r\n}\r\n\r\n.hover1::after {\r\n  content: \"\";\r\n  position: absolute;\r\n}\r\n.hover1::after {\r\n  top: 100%;\r\n  height: 2px !important;\r\n  width: 40%;\r\n  left: 30%;\r\n  background-color: var(--white);\r\n  transition: 0.3s ease-out all 0.1s;\r\n}\r\n\r\n.btn:hover .hover1:after {\r\n  width: 90%;\r\n  left: 5%;\r\n  transition: 0.3s ease all;\r\n}\r\n", ""]);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/fonts.css":
+/*!*****************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/fonts.css ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".brandon-thin {\r\n  font-family: brandon-grotesque, sans-serif;\r\n  font-weight: 100;\r\n}\r\n\r\n.brandon-thin-italic {\r\n  font-family: brandon-grotesque, sans-serif;\r\n  font-weight: 100;\r\n  font-style: italic;\r\n}\r\n\r\n.brandon-light {\r\n  font-family: brandon-grotesque, sans-serif;\r\n  font-weight: 300;\r\n}\r\n\r\n.brandon-light-italic {\r\n  font-family: brandon-grotesque, sans-serif;\r\n  font-weight: 300;\r\n  font-style: italic;\r\n}\r\n\r\n.brandon-regular {\r\n  font-family: brandon-grotesque, sans-serif;\r\n  font-weight: 400;\r\n}\r\n\r\n.brandon-bold {\r\n  font-family: brandon-grotesque, sans-serif;\r\n  font-weight: 700;\r\n}\r\n\r\n.sans-light {\r\n  font-family: source-sans-pro, sans-serif;\r\n  font-weight: 300;\r\n}\r\n\r\n.sans-regular {\r\n  font-family: source-sans-pro, sans-serif;\r\n  font-weight: 400;\r\n}\r\n\r\n.sans-bold {\r\n  font-family: source-sans-pro, sans-serif;\r\n  font-weight: 700;\r\n}\r\n\r\n.text-yellow {\r\n  color: var(--secondary-color);\r\n}\r\n\r\n.text-grey {\r\n  color: var(--grey);\r\n}\r\n", ""]);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/footer.css":
+/*!******************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/footer.css ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, "footer {\r\n  background-color: var(--grey);\r\n}\r\n\r\nfooter h1 {\r\n  font-size: 1.5rem;\r\n  color: var(--secondary-color);\r\n  border-bottom: 1px var(--secondary-color) solid;\r\n}\r\n\r\nfooter,\r\nfooter a {\r\n  color: var(--textColor);\r\n}\r\n\r\n/* Weather */\r\n\r\n#temp {\r\n  font-size: 2rem;\r\n}\r\n", ""]);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/main.css":
+/*!****************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/main.css ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ":root {\r\n  --primary-color: rgb(58, 58, 58);\r\n  --secondary-color: #b7a15b;\r\n  --textColor: #fff;\r\n  --black: #000;\r\n  --grey: rgb(32, 32, 32);\r\n}\r\n\r\n/* HUSK AT GØR COMPATIBLE MED IE */\r\n\r\nhtml,\r\nbody {\r\n  scroll-behavior: smooth;\r\n  overflow-x: hidden;\r\n}\r\n\r\n.wrapper {\r\n  position: relative;\r\n  height: 100vh;\r\n  min-height: 100vh;\r\n  width: 100vw;\r\n}\r\nsection {\r\n  overflow: hidden;\r\n}\r\n\r\n.wrapper video {\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  min-width: 100%;\r\n  min-height: 100%;\r\n  width: auto;\r\n  height: auto;\r\n  z-index: 0;\r\n  -ms-transform: translateX(-50%) translateY(-50%);\r\n  -moz-transform: translateX(-50%) translateY(-50%);\r\n  -webkit-transform: translateX(-50%) translateY(-50%);\r\n  transform: translateX(-50%) translateY(-50%);\r\n}\r\n\r\n.wrapper .overlay {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  height: 100%;\r\n  width: 100%;\r\n  background-color: var(--black);\r\n  opacity: 0.7;\r\n  z-index: 1;\r\n}\r\n\r\n.btn {\r\n  background-color: var(--secondary-color) !important;\r\n  color: var(--white) !important;\r\n  text-transform: uppercase;\r\n  padding: 0.7rem 2rem !important;\r\n}\r\n\r\n.container > .heading {\r\n  max-height: 0px;\r\n  overflow: hidden;\r\n  transition: 2s;\r\n  z-index: 2;\r\n}\r\n.container > .heading > h1 {\r\n  font-size: 3rem;\r\n}\r\n.container > .heading > p {\r\n  font-size: 1.2rem;\r\n}\r\n.container > .heading.show {\r\n  max-height: 100%;\r\n}\r\n\r\nh1 {\r\n  z-index: 1;\r\n}\r\n/* ShowRoom */\r\n\r\n#showroom {\r\n  background-color: var(--grey);\r\n  position: relative;\r\n}\r\n\r\n/* SWIPER */\r\n\r\n.swiper-container {\r\n  width: 100%;\r\n  height: auto;\r\n  overflow: hidden;\r\n  z-index: 3;\r\n  border-radius: 2rem;\r\n}\r\n.swiper-wrapper {\r\n  height: 100%;\r\n  width: 100%;\r\n}\r\n.swiper-slide img {\r\n  width: 100%;\r\n}\r\n\r\n.swiper-wrapper > .swiper-button-prev,\r\n.swiper-button-next {\r\n  color: var(--secondary-color);\r\n}\r\n\r\n.slide-overlay {\r\n  height: 100%;\r\n  width: 100%;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  opacity: 0;\r\n  transition: 0.2s linear;\r\n  background-color: var(--black);\r\n}\r\n\r\n.slide-text {\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translateX(-50%) translateY(-50%);\r\n  color: var(--white);\r\n  font-size: 3.5rem;\r\n  opacity: 0;\r\n  transition: 0.2s linear;\r\n}\r\n\r\n.swiper-container:hover .slide-overlay {\r\n  opacity: 0.7;\r\n}\r\n\r\n.swiper-container:hover .slide-text {\r\n  opacity: 1;\r\n}\r\n\r\n/* About */\r\n\r\n#about {\r\n  position: relative;\r\n}\r\n\r\n/* ***************** SVGS **************** */\r\n\r\n.whiteRectangle {\r\n  position: absolute;\r\n  z-index: 2;\r\n  right: -13rem;\r\n  bottom: -9rem;\r\n  transform: rotateZ(157deg);\r\n  -ms-transform: rotateZ(157deg);\r\n  -moz-transform: rotateZ(157deg);\r\n  -webkit-transform: rotateZ(157deg);\r\n  fill: var(--white);\r\n}\r\n\r\n.blackRectangle {\r\n  position: absolute;\r\n  z-index: 0;\r\n  left: -13rem;\r\n  transform: rotateZ(-157deg);\r\n  -ms-transform: rotateZ(-157deg);\r\n  -moz-transform: rotateZ(-157deg);\r\n  -webkit-transform: rotateZ(-157deg);\r\n  fill: var(--grey);\r\n}\r\n.swiper-button-prev {\r\n  background-image: url(\"data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23b7a15b'%2F%3E%3C%2Fsvg%3E\") !important;\r\n}\r\n.swiper-button-next {\r\n  background-image: url(\"data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23b7a15b'%2F%3E%3C%2Fsvg%3E\") !important;\r\n}\r\n", ""]);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/margins.css":
+/*!*******************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/margins.css ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".mt-50 {\r\n  margin-top: 5rem;\r\n}\r\n\r\n.mb-50 {\r\n  margin-bottom: 5rem;\r\n}\r\n\r\n.my-50 {\r\n  margin: 5rem 0;\r\n}\r\n\r\n.mt-30 {\r\n  margin-top: 3rem;\r\n}\r\n", ""]);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/nav.css":
+/*!***************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/nav.css ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".navbar {\r\n  z-index: 100;\r\n  font-size: 1.5rem;\r\n  transition: 1s;\r\n}\r\n\r\n.darkMode {\r\n  background-color: var(--grey);\r\n}\r\n", ""]);
+
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/reset.css":
+/*!*****************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/reset.css ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, "/* http://meyerweb.com/eric/tools/css/reset/ \r\n   v2.0 | 20110126\r\n   License: none (public domain)\r\n*/\r\n\r\nhtml,\r\nbody,\r\ndiv,\r\nspan,\r\napplet,\r\nobject,\r\niframe,\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6,\r\np,\r\nblockquote,\r\npre,\r\na,\r\nabbr,\r\nacronym,\r\naddress,\r\nbig,\r\ncite,\r\ncode,\r\ndel,\r\ndfn,\r\nem,\r\nimg,\r\nins,\r\nkbd,\r\nq,\r\ns,\r\nsamp,\r\nsmall,\r\nstrike,\r\nstrong,\r\nsub,\r\nsup,\r\ntt,\r\nvar,\r\nb,\r\nu,\r\ni,\r\ncenter,\r\ndl,\r\ndt,\r\ndd,\r\nol,\r\nul,\r\nli,\r\nfieldset,\r\nform,\r\nlabel,\r\nlegend,\r\ntable,\r\ncaption,\r\ntbody,\r\ntfoot,\r\nthead,\r\ntr,\r\nth,\r\ntd,\r\narticle,\r\naside,\r\ncanvas,\r\ndetails,\r\nembed,\r\nfigure,\r\nfigcaption,\r\nfooter,\r\nheader,\r\nhgroup,\r\nmenu,\r\nnav,\r\noutput,\r\nruby,\r\nsection,\r\nsummary,\r\ntime,\r\nmark,\r\naudio,\r\nvideo {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  font-size: 100%;\r\n  font: inherit;\r\n  vertical-align: baseline;\r\n}\r\n/* HTML5 display-role reset for older browsers */\r\narticle,\r\naside,\r\ndetails,\r\nfigcaption,\r\nfigure,\r\nfooter,\r\nheader,\r\nhgroup,\r\nmenu,\r\nnav,\r\nsection {\r\n  display: block;\r\n}\r\nbody {\r\n  line-height: 1;\r\n}\r\nol,\r\nul {\r\n  list-style: none;\r\n}\r\nblockquote,\r\nq {\r\n  quotes: none;\r\n}\r\nblockquote:before,\r\nblockquote:after,\r\nq:before,\r\nq:after {\r\n  content: \"\";\r\n  content: none;\r\n}\r\ntable {\r\n  border-collapse: collapse;\r\n  border-spacing: 0;\r\n}\r\n", ""]);
+
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/css/styles.css":
 /*!******************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/css/styles.css ***!
@@ -112,17 +217,18 @@ module.exports = _classCallCheck;
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Imports
-exports.push([module.i, "@import url(/src/css/reset.css);", ""]);
-exports.push([module.i, "@import url(/src/css/margins.css);", ""]);
-exports.push([module.i, "@import url(/src/css/fonts.css);", ""]);
+exports.i(__webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./reset.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/reset.css"), "");
+exports.i(__webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./margins.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/margins.css"), "");
+exports.i(__webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./fonts.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/fonts.css"), "");
 exports.push([module.i, "@import url(https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css);", ""]);
-exports.push([module.i, "@import url(/src/css/main.css);", ""]);
-exports.push([module.i, "@import url(/src/css/nav.css);", ""]);
-exports.push([module.i, "@import url(/src/css/footer.css);", ""]);
-exports.push([module.i, "@import url(/src/css/btnHover.css);", ""]);
+exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css);", ""]);
+exports.i(__webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./main.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/main.css"), "");
+exports.i(__webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./nav.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/nav.css"), "");
+exports.i(__webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./footer.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/footer.css"), "");
+exports.i(__webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./btnHover.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/btnHover.css"), "");
 
 // Module
-exports.push([module.i, "/* @import url(\"https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css\"); */\r\n", ""]);
+exports.push([module.i, "\r\n", ""]);
 
 
 

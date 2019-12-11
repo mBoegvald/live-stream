@@ -1,9 +1,9 @@
-@import "/src/css/reset.css";
-@import "/src/css/margins.css";
-@import "/src/css/fonts.css";
+@import "reset.css";
+@import "margins.css";
+@import "fonts.css";
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
-/* @import url("https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"); */
-@import "/src/css/main.css";
-@import "/src/css/nav.css";
-@import "/src/css/footer.css";
-@import "/src/css/btnHover.css";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css");
+@import "main.css";
+@import "nav.css";
+@import "footer.css";
+@import "btnHover.css";
