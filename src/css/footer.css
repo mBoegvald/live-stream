@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--grey);
+  background-color: var(--primary-color);
 }
 
 footer h1 {
@@ -10,7 +10,7 @@ footer h1 {
 
 footer,
 footer a {
-  color: var(--textColor);
+  color: var(--white);
 }
 
 /* Weather */

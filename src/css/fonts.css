@@ -45,10 +45,10 @@
   font-weight: 700;
 }
 
-.text-yellow {
+.text-sec {
   color: var(--secondary-color);
 }
 
-.text-grey {
-  color: var(--grey);
+.text-pri {
+  color: var(--primary-color);
 }

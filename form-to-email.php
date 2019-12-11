@@ -17,12 +17,13 @@ if(empty($name)||empty($customer_email))
   exit;
 }
 
-$email_from = "noreply@mboegvald.dk";
-$email_subject = "New Form Submission";
-$email_body = "This is a test email, here's the info you typed in.\n". " Details:\n Name: $name \n Email: $customer_email \n Product: $products \n Message: $message";
+$email_subject = "Mail fra $name";
+$email_body =
+"Informationer:\nNavn: $name \nEmail: $customer_email \nProdukt: $product \nBesked: $message";
 
 
 $to = $customer_email;
+$email_from = "noreply@mboegvald.dk";
 $headers = "From: $email_from";
 
 // Configure SMTP Settings
@@ -35,4 +36,5 @@ if (!mail($to,$email_subject,$email_body,$headers)){
     // If failed to send email.
     echo "Email Failed To Send";
 }
+
 
