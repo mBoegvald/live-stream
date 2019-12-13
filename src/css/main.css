@@ -81,24 +81,18 @@ section {
 
 /* SVGS */
 
-.whiteRectangle {
+svg.triangleLeft {
   position: absolute;
-  z-index: -1;
-  right: -13rem;
-  transform: rotateZ(157deg);
-  -ms-transform: rotateZ(157deg);
-  -moz-transform: rotateZ(157deg);
-  -webkit-transform: rotateZ(157deg);
-  fill: var(--white);
+  width: 30%;
+  height: auto;
+  bottom: 0;
+  left: 0;
 }
 
-.blackRectangle {
+svg.triangleRight {
   position: absolute;
-  z-index: 0;
-  left: -13rem;
-  transform: rotateZ(-157deg);
-  -ms-transform: rotateZ(-157deg);
-  -moz-transform: rotateZ(-157deg);
-  -webkit-transform: rotateZ(-157deg);
-  fill: var(--primary-color);
+  width: 30%;
+  height: auto;
+  bottom: 0;
+  right: 0;
 }
