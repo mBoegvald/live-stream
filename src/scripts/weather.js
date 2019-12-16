@@ -37,7 +37,7 @@ export default class Weather {
       }
 
       function error() {
-        $("#temp").html("Unable to retrieve your location");
+        $("#minutely").html("Unable to retrieve your location");
       }
     }
     weather();

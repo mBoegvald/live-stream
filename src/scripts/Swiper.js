@@ -1,6 +1,6 @@
 export default class Slider {
   constructor() {
-    fetch("http://fra-oven.dk/wordpress/wp-json/acf/v3/slideshow_post/")
+    fetch("https://fra-oven.dk/wordpress/wp-json/acf/v3/slideshow_post/")
       .then(data => data.json())
       .then(data => {
         for (let i = 0; i < data.length; i++) {
