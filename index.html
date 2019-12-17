@@ -48,6 +48,11 @@
         opacity: 0.5;
         background-color: var(--black);
         z-index: 0;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
       }
 
       .fadedBox {
@@ -145,7 +150,7 @@
         background: url("img/360panorama.png") no-repeat center center;
       }
     </style>
-    <link rel="icon" href="logo_original.png" type="image/x-icon" />
+    <link rel="icon" href="img/logo_original_sort.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://use.typekit.net/eqw4its.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
     <script src="./dist/bundle.js"></script>
@@ -154,7 +159,7 @@
     <section id="home">
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top brandon-light">
         <a class="navbar-brand" href="#"
-          ><img src="../img/logo_original_hvid.png"
+          ><img src="img/logo_original_hvid.png"
         /></a>
         <button
           class="navbar-toggler"
@@ -342,10 +347,10 @@
           <div class="col-sm col-md-6">
             <h2 class="brandon-light-italic">Kontakt os</h2>
             <form
+              id="myForm"
               class="needs-validation sans-regular"
               novalidate
-              method="post"
-              action="form-to-email.php"
+              method="POST"
             >
               <input
                 type="text"
