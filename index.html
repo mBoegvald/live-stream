@@ -13,17 +13,32 @@
     kvalitet."
     />
     <style>
-      .imageWrapper {
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        grid-gap: 1rem;
+        height: 90vh;
+      }
+
+      .grid-col {
+        grid-column: span 1;
+        grid-row: span 5;
         background: url("img/pic.jpg") no-repeat center center;
         background-size: cover;
         height: 100%;
         overflow: hidden;
       }
-      .boxOverlay {
+      .col-tall {
+        grid-column: span 2;
+      }
+      .col-content {
+        grid-column: span 2;
+      }
+      .grid-col.boxOverlay {
         position: relative;
       }
-
-      .boxOverlay:after {
+      .grid-col.boxOverlay:after {
         position: absolute;
         content: "";
         top: 0;
@@ -32,63 +47,84 @@
         height: 100%;
         opacity: 0.5;
         background-color: var(--black);
-      }
-      .boxOverlay:hover:after {
-        opacity: 0.1;
-      }
-      /* .imageWrapper {
-        background: url("pic.jpg") no-repeat center center;
-        background-size: cover;
-        height: 100%;
-        overflow: hidden;
-      }
-      .boxOverlay {
-        position: relative;
-      }
-      .boxOverlay:after {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.5;
-        background-color: black;
-        transition: 0.3s;
-      }
-      .boxOverlay:hover:after {
-        opacity: 0.1;
+        z-index: 0;
       }
 
       .fadedBox {
         position: absolute;
-        bottom: -1rem;
+        bottom: 0;
         left: 0;
-        color: #fff;
-        -webkit-transition: all 300ms ease-out;
-        -moz-transition: all 300ms ease-out;
-        -o-transition: all 300ms ease-out;
-        -ms-transition: all 300ms ease-out;
-        transition: all 300ms ease-out;
+        z-index: 1;
         width: 100%;
-        height: 100%;
-        transform: translateY(30px);
-        -webkit-transform: translateY(30px);
       }
+      .fadedBox {
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+    
+      @media (max-width: 992px) {
+        .fadedBox h2 {
+        font-size: 1rem;
+      }
+      .fadedBox p {
+        font-size: 0.5rem;
+        margin-bottom: 0;
+      }
+      }
+      @media (min-width: 992px) {
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          grid-gap: 1rem;
+          height: 70vh;
+        }
+        .grid-col {
+          grid-column: span 1;
+          grid-row: span 1;
+          background: url("img/pic.jpg") no-repeat center center;
+          background-size: cover;
+          height: 100%;
+          overflow: hidden;
+        }
+        .col-tall {
+          grid-column: 1;
+          grid-row: 1/3;
+          height: 100%;
+        }
 
-      .boxOverlay:hover .fadedBox {
-        opacity: 0.8;
+        .grid-col.boxOverlay:hover:after {
+          opacity: 0.1;
+        }
+        .fadedBox {
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          -ms-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+          transform: translateY(1rem);
+          -webkit-transform: translateY(1rem);
+        }
+
+        .grid-col.boxOverlay:hover .fadedBox {
+          opacity: 0.8;
+        }
+        .hideText {
+          opacity: 0;
+          transition-duration: 0.3s;
+        }
+        .grid-col.boxOverlay:hover .fadedBox,
+        .grid-col.boxOverlay:hover .hideText {
+          opacity: 1;
+          transform: translateY(0px);
+          -webkit-transform: translateY(0px);
+        }
+        .fadedBox {
+          background-color: transparent;
+        }
+        .grid-col.boxOverlay:hover .fadedBox {
+          background-color: rgba(0, 0, 0, 0.7);
+        }
       }
-      .hideText {
-        opacity: 0;
-        transition-duration: 0.3s;
-      }
-      .boxOverlay:hover .fadedBox,
-      .boxOverlay:hover .hideText {
-        opacity: 1;
-        transform: translateY(0px);
-        -webkit-transform: translateY(0px);
-      } */
     </style>
     <link rel="icon" href="logo_original.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://use.typekit.net/eqw4its.css" />
@@ -177,84 +213,75 @@
       </div>
     </section>
     <section id="products">
-      <div class="container my-50">
-        <div class="container-fluid">
-          <h1 class="brandon-thin text-sec text-center">
-            Fra Oven tilbyder
-          </h1>
-        </div>
-        <div class="row justify-content-center mt-30">
-          <div class="col-5">
-            <div class="imageWrapper boxOverlay">
-              <h2 class="brandon-light-italic">Ejendomsfoto</h2>
-              <p class="sans-regular">
+      <div class="container justify-content-center my-50">
+        <h1 class="brandon-thin text-sec text-center">
+          Fra Oven tilbyder
+        </h1>
+        <div class="grid-container mt-50">
+          <div class="col-tall grid-col boxOverlay">
+            <div class="fadedBox px-2 py-1">
+              <h2 class="brandon-light-italic text-sec">Ejendomsfoto</h2>
+              <p class="sans-regular hideText text-white">
                 Hvis du skal sælge hus, båd eller andet, kan et par gode
                 billeder fra luften give et ekstra plus.
               </p>
             </div>
           </div>
-          <div class="col-5">
-            <div class="row">
-              <div class="col">
-                <div class="imageWrapper boxOverlay">
-                  <h2 class="brandon-light-italic">Luftfoto</h2>
-                  <p class="sans-regular">
-                    Oplev områder fra en helt ny vinkel eller skab visuelt
-                    overblik. Kan også bruges til f.eks. inspicering af
-                    afgrøder.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="imageWrapper boxOverlay">
-                  <h2 class="brandon-light-italic">Taginspektion</h2>
-                  <p class="sans-regular">
-                    Taginspektion med en drone, er et billigere og hurtigere
-                    alternativ til leje af lift eller opsætning af stillads.
-                  </p>
-                </div>
-              </div>
+
+          <div class="grid-col boxOverlay">
+            <div class="fadedBox px-2 py-1">
+              <h2 class="brandon-light-italic text-sec">Luftfoto</h2>
+              <p class="sans-regular hideText text-white">
+                Oplev områder fra en helt ny vinkel eller skab visuelt overblik.
+                Kan også bruges til f.eks. inspicering af afgrøder.
+              </p>
             </div>
           </div>
-        </div>
-        <div class="row justify-content-center mt-5">
-          <div class="col-5">
-            <div class="imageWrapper boxOverlay">
-              <h2 class="brandon-light-italic">360° panorama</h2>
-              <p class="sans-regular">
+          <div class="grid-col boxOverlay">
+            <div class="fadedBox px-2">
+              <h2 class="brandon-light-italic text-sec">Taginspektion</h2>
+              <p class="sans-regular hideText text-white">
+                Taginspektion med en drone, er et billigere og hurtigere
+                alternativ til leje af lift eller opsætning af stillads.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid-col boxOverlay">
+            <div class="fadedBox px-2 py-1">
+              <h2 class="brandon-light-italic text-sec">360° panorama</h2>
+              <p class="sans-regular hideText text-white">
                 Brug for billeder af landskabet? 360° panorama billeder løser
                 dette.
               </p>
             </div>
           </div>
-          <div class="col-5">
-            <div class="imageWrapper boxOverlay">
-              <h2 class="brandon-light-italic">Byggeplads</h2>
-              <p class="sans-regular">
+          <div class="grid-col boxOverlay">
+            <div class="fadedBox px-2 py-1">
+              <h2 class="brandon-light-italic text-sec">Byggeplads</h2>
+              <p class="sans-regular hideText text-white">
                 Skal du bruge et hurtigt overblik over byggepldasen, er en drone
-                en god og hurtig løsning. Pris afhænger af lokation og
-                risikovurdering.
+                en god og hurtig løsning.
               </p>
             </div>
           </div>
-        </div>
-        <div class="row justify-content-center mt-30">
-          <div class="col-5">
-            <p class="mt-4">
-              <b>Startpris: 1400kr</b> – afhængig af opgavens karakter og
-              risikovurdering – Kørsel uden for sjælland er efter statens takst.
-            </p>
-            <a class="btn" href="#about" role="button">Kontakt for tilbud</a>
-          </div>
-          <div class="col-5">
-            <p class="mt-4">
-              Alle opgaver er en del af grundpakken. Grundpakken består af 8-10
-              billeder og en film på 2-5 min. Billeder og film lægges på dropbox
-              til digital downoad og gemmes i 1 år. Tilkøb af film og billeder
-              er muligt.
-            </p>
+          <div class="col-content">
+            <div class="col">
+              <p class="mt-4">
+                Alle opgaver er en del af grundpakken. Grundpakken består af
+                8-10 billeder og en film på 2-5 min. Billeder og film lægges på
+                dropbox til digital downoad og gemmes i 1 år. Tilkøb af film og
+                billeder er muligt.
+              </p>
+            </div>
+            <div class="col">
+              <p class="mt-4">
+                <b>Startpris: 1400kr</b> – afhængig af opgavens karakter og
+                risikovurdering – Kørsel uden for sjælland er efter statens
+                takst.
+              </p>
+              <a class="btn" href="#about" role="button">Kontakt for tilbud</a>
+            </div>
           </div>
         </div>
       </div>
