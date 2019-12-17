@@ -12,6 +12,84 @@
     ejendomsfoto. Vi har det hele. Uddannet droneoperatør. Altid høj
     kvalitet."
     />
+    <style>
+      .imageWrapper {
+        background: url("img/pic.jpg") no-repeat center center;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+      }
+      .boxOverlay {
+        position: relative;
+      }
+
+      .boxOverlay:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        background-color: var(--black);
+      }
+      .boxOverlay:hover:after {
+        opacity: 0.1;
+      }
+      /* .imageWrapper {
+        background: url("pic.jpg") no-repeat center center;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+      }
+      .boxOverlay {
+        position: relative;
+      }
+      .boxOverlay:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        background-color: black;
+        transition: 0.3s;
+      }
+      .boxOverlay:hover:after {
+        opacity: 0.1;
+      }
+
+      .fadedBox {
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+        color: #fff;
+        -webkit-transition: all 300ms ease-out;
+        -moz-transition: all 300ms ease-out;
+        -o-transition: all 300ms ease-out;
+        -ms-transition: all 300ms ease-out;
+        transition: all 300ms ease-out;
+        width: 100%;
+        height: 100%;
+        transform: translateY(30px);
+        -webkit-transform: translateY(30px);
+      }
+
+      .boxOverlay:hover .fadedBox {
+        opacity: 0.8;
+      }
+      .hideText {
+        opacity: 0;
+        transition-duration: 0.3s;
+      }
+      .boxOverlay:hover .fadedBox,
+      .boxOverlay:hover .hideText {
+        opacity: 1;
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+      } */
+    </style>
     <link rel="icon" href="logo_original.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://use.typekit.net/eqw4its.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
@@ -105,9 +183,9 @@
             Fra Oven tilbyder
           </h1>
         </div>
-        <div class="row justify-content-start mt-30">
-          <div class="col-sm col-md-4">
-            <div>
+        <div class="row justify-content-center mt-30">
+          <div class="col-5">
+            <div class="imageWrapper boxOverlay">
               <h2 class="brandon-light-italic">Ejendomsfoto</h2>
               <p class="sans-regular">
                 Hvis du skal sælge hus, båd eller andet, kan et par gode
@@ -115,28 +193,35 @@
               </p>
             </div>
           </div>
-          <div class="col-sm col-md-4">
-            <div>
-              <h2 class="brandon-light-italic">Luftfoto</h2>
-              <p class="sans-regular">
-                Oplev områder fra en helt ny vinkel eller skab visuelt overblik.
-                Kan også bruges til f.eks. inspicering af afgrøder.
-              </p>
+          <div class="col-5">
+            <div class="row">
+              <div class="col">
+                <div class="imageWrapper boxOverlay">
+                  <h2 class="brandon-light-italic">Luftfoto</h2>
+                  <p class="sans-regular">
+                    Oplev områder fra en helt ny vinkel eller skab visuelt
+                    overblik. Kan også bruges til f.eks. inspicering af
+                    afgrøder.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-sm col-md-4">
-            <div>
-              <h2 class="brandon-light-italic">Taginspektion</h2>
-              <p class="sans-regular">
-                Taginspektion med en drone, er et billigere og hurtigere
-                alternativ til leje af lift eller opsætning af stillads.
-              </p>
+            <div class="row">
+              <div class="col">
+                <div class="imageWrapper boxOverlay">
+                  <h2 class="brandon-light-italic">Taginspektion</h2>
+                  <p class="sans-regular">
+                    Taginspektion med en drone, er et billigere og hurtigere
+                    alternativ til leje af lift eller opsætning af stillads.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row justify-content-around mt-5">
-          <div class="col-sm col-md-4">
-            <div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-5">
+            <div class="imageWrapper boxOverlay">
               <h2 class="brandon-light-italic">360° panorama</h2>
               <p class="sans-regular">
                 Brug for billeder af landskabet? 360° panorama billeder løser
@@ -144,8 +229,8 @@
               </p>
             </div>
           </div>
-          <div class="col-sm col-md-4">
-            <div>
+          <div class="col-5">
+            <div class="imageWrapper boxOverlay">
               <h2 class="brandon-light-italic">Byggeplads</h2>
               <p class="sans-regular">
                 Skal du bruge et hurtigt overblik over byggepldasen, er en drone
@@ -155,19 +240,21 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col">
+        <div class="row justify-content-center mt-30">
+          <div class="col-5">
             <p class="mt-4">
-              For alle opgaver er der en grundpakke, som indeholder 8-10
-              billeder og en lille film på 2-5 min. Yderligere kan der tilkøbes
-              ekstra film og billeder. Billeder og video gennemgår en lettere
-              korrigering. Film og billeder lægges på dropbox til digital
-              download, hvor disse kan hentes via link, billeder gemmes i 1 år.
-              <br />
-              Startpris: 1400kr – afhængig af opgavens karakter og
+              <b>Startpris: 1400kr</b> – afhængig af opgavens karakter og
               risikovurdering – Kørsel uden for sjælland er efter statens takst.
             </p>
-            <button class="btn">Kontakt for tilbud</button>
+            <a class="btn" href="#about" role="button">Kontakt for tilbud</a>
+          </div>
+          <div class="col-5">
+            <p class="mt-4">
+              Alle opgaver er en del af grundpakken. Grundpakken består af 8-10
+              billeder og en film på 2-5 min. Billeder og film lægges på dropbox
+              til digital downoad og gemmes i 1 år. Tilkøb af film og billeder
+              er muligt.
+            </p>
           </div>
         </div>
       </div>
