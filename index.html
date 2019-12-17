@@ -24,11 +24,11 @@
       .grid-col {
         grid-column: span 1;
         grid-row: span 5;
-        background: url("img/pic.jpg") no-repeat center center;
         background-size: cover;
         height: 100%;
         overflow: hidden;
       }
+
       .col-tall {
         grid-column: span 2;
       }
@@ -60,15 +60,15 @@
       .fadedBox {
         background-color: rgba(0, 0, 0, 0.7);
       }
-    
+
       @media (max-width: 992px) {
         .fadedBox h2 {
-        font-size: 1rem;
-      }
-      .fadedBox p {
-        font-size: 0.5rem;
-        margin-bottom: 0;
-      }
+          font-size: 1rem;
+        }
+        .fadedBox p {
+          font-size: 0.5rem;
+          margin-bottom: 0;
+        }
       }
       @media (min-width: 992px) {
         .grid-container {
@@ -81,7 +81,6 @@
         .grid-col {
           grid-column: span 1;
           grid-row: span 1;
-          background: url("img/pic.jpg") no-repeat center center;
           background-size: cover;
           height: 100%;
           overflow: hidden;
@@ -125,6 +124,26 @@
           background-color: rgba(0, 0, 0, 0.7);
         }
       }
+
+      .ejendomsfoto {
+        background: url("img/ejendomsfoto.jpg") no-repeat center center;
+      }
+
+      .luftfoto {
+        background: url("img/luftfoto.jpg") no-repeat center center;
+      }
+
+      .taginspektion {
+        background: url("img/inspektion.jpg") no-repeat center center;
+      }
+
+      .byggeplads {
+        background: url("img/byggeplads.jpg") no-repeat center center;
+      }
+
+      .panorama {
+        background: url("img/360panorama.png") no-repeat center center;
+      }
     </style>
     <link rel="icon" href="logo_original.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://use.typekit.net/eqw4its.css" />
@@ -134,7 +153,9 @@
   <body>
     <section id="home">
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top brandon-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#"
+          ><img src="../img/logo_original_hvid.png"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -218,7 +239,7 @@
           Fra Oven tilbyder
         </h1>
         <div class="grid-container mt-50">
-          <div class="col-tall grid-col boxOverlay">
+          <div class="col-tall grid-col boxOverlay ejendomsfoto">
             <div class="fadedBox px-2 py-1">
               <h2 class="brandon-light-italic text-sec">Ejendomsfoto</h2>
               <p class="sans-regular hideText text-white">
@@ -228,7 +249,7 @@
             </div>
           </div>
 
-          <div class="grid-col boxOverlay">
+          <div class="grid-col boxOverlay luftfoto">
             <div class="fadedBox px-2 py-1">
               <h2 class="brandon-light-italic text-sec">Luftfoto</h2>
               <p class="sans-regular hideText text-white">
@@ -237,7 +258,7 @@
               </p>
             </div>
           </div>
-          <div class="grid-col boxOverlay">
+          <div class="grid-col boxOverlay taginspektion">
             <div class="fadedBox px-2">
               <h2 class="brandon-light-italic text-sec">Taginspektion</h2>
               <p class="sans-regular hideText text-white">
@@ -247,7 +268,7 @@
             </div>
           </div>
 
-          <div class="grid-col boxOverlay">
+          <div class="grid-col boxOverlay panorama">
             <div class="fadedBox px-2 py-1">
               <h2 class="brandon-light-italic text-sec">360° panorama</h2>
               <p class="sans-regular hideText text-white">
@@ -256,7 +277,7 @@
               </p>
             </div>
           </div>
-          <div class="grid-col boxOverlay">
+          <div class="grid-col boxOverlay byggeplads">
             <div class="fadedBox px-2 py-1">
               <h2 class="brandon-light-italic text-sec">Byggeplads</h2>
               <p class="sans-regular hideText text-white">
