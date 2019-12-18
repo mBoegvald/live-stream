@@ -3,7 +3,7 @@ export default class SendMail {
     $(function() {
       $("#myForm").submit(function(e) {
         e.preventDefault();
-        var form_data = $(this).serialize();
+        let form_data = $(this).serialize();
         $.ajax({
           type: "POST",
           url: "form-to-email.php",
