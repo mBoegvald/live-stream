@@ -33,8 +33,17 @@
         grid-column: span 2;
       }
       .col-content {
-        grid-column: span 2;
+        grid-column: span 1;
       }
+
+      .col-content.col-content-a {
+        grid-column: 1 / span 2;     
+      }
+
+      .col-content.col-content-b {
+        grid-column: 1 / span 2;     
+      } 
+
       .grid-col.boxOverlay {
         position: relative;
       }
@@ -127,6 +136,15 @@
         }
         .grid-col.boxOverlay:hover .fadedBox {
           background-color: rgba(0, 0, 0, 0.7);
+        }
+        .col-content.col-content-a {
+          grid-column: 2 / span 1;
+          grid-row: 4;
+        }
+
+        .col-content.col-content-b {
+          grid-column: 1 / span 1;
+          grid-row: 4;
         }
       }
 
@@ -291,7 +309,7 @@
               </p>
             </div>
           </div>
-          <div class="col-content">
+          <div class="col-content col-content-a">
             <div class="col">
               <p class="mt-4">
                 Alle opgaver er en del af grundpakken. Grundpakken består af
@@ -300,6 +318,8 @@
                 billeder er muligt.
               </p>
             </div>
+          </div>
+          <div class="col-content col-content-b">
             <div class="col">
               <p class="mt-4">
                 <b>Startpris: 1400kr</b> – afhængig af opgavens karakter og
@@ -415,8 +435,8 @@
             <h1 class="brandon-thin-italic">Information</h1>
             <ul class="sans-regular">
               <li><a href="#">Klokkedybet 22, 2730 Herlev</a></li>
-              <li><a href="#">Email: info@fra-oven.dk</a></li>
-              <li><a href="#">Tel: 42373953</a></li>
+              <li><a href="mailto:info@fra-oven.dk">Email: info@fra-oven.dk</a></li>
+              <li><a href="tel:+4542373953">Tel: 42373953</a></li>
             </ul>
           </div>
           <div class="col">
