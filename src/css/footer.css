@@ -11,6 +11,7 @@ footer h1 {
 footer,
 footer a {
   color: var(--white);
+  transition: 0.2s;
 }
 
 footer a:hover {
