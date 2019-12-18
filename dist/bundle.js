@@ -148,6 +148,21 @@ exports.push([module.i, "footer {\n  background-color: var(--primary-color);\n}\
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/grid.css":
+/*!****************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/grid.css ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".grid-container {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  grid-template-rows: repeat(12, 1fr);\n  grid-gap: 1rem;\n  height: 90vh;\n}\n\n.grid-col {\n  grid-column: span 1;\n  grid-row: span 5;\n  background-size: cover;\n  height: 100%;\n  overflow: hidden;\n}\n\n.col-tall {\n  grid-column: span 2;\n}\n.col-content {\n  grid-column: span 1;\n}\n\n.col-content.col-content-a {\n  grid-column: 1 / span 2;\n}\n\n.col-content.col-content-b {\n  grid-column: 1 / span 2;\n}\n\n.grid-col.boxOverlay {\n  position: relative;\n}\n.grid-col.boxOverlay:after {\n  position: absolute;\n  content: \"\";\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  opacity: 0.5;\n  background-color: var(--black);\n  z-index: 0;\n  -webkit-transition: all 0.3s ease-out;\n  -moz-transition: all 0.3s ease-out;\n  -o-transition: all 0.3s ease-out;\n  -ms-transition: all 0.3s ease-out;\n  transition: all 0.3s ease-out;\n}\n\n.fadedBox {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  z-index: 1;\n  width: 100%;\n}\n.fadedBox {\n  background-color: rgba(0, 0, 0, 0.7);\n}\n\n@media (max-width: 992px) {\n  .fadedBox h2 {\n    font-size: 1rem;\n  }\n  .fadedBox p {\n    font-size: 0.5rem;\n    margin-bottom: 0;\n  }\n}\n@media (min-width: 992px) {\n  .grid-container {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    grid-template-rows: repeat(3, 1fr);\n    grid-gap: 1rem;\n    height: 70vh;\n  }\n  .grid-col {\n    grid-column: span 1;\n    grid-row: span 1;\n    background-size: cover;\n    height: 100%;\n    overflow: hidden;\n  }\n  .col-tall {\n    grid-column: 1;\n    grid-row: 1/3;\n    height: 100%;\n  }\n\n  .grid-col.boxOverlay:hover:after {\n    opacity: 0.1;\n  }\n  .fadedBox {\n    -webkit-transition: all 0.3s ease-out;\n    -moz-transition: all 0.3s ease-out;\n    -o-transition: all 0.3s ease-out;\n    -ms-transition: all 0.3s ease-out;\n    transition: all 0.3s ease-out;\n    transform: translateY(1rem);\n    -webkit-transform: translateY(1rem);\n  }\n\n  .grid-col.boxOverlay:hover .fadedBox {\n    opacity: 0.8;\n  }\n  .hideText {\n    opacity: 0;\n    transition-duration: 0.3s;\n  }\n  .grid-col.boxOverlay:hover .fadedBox,\n  .grid-col.boxOverlay:hover .hideText {\n    opacity: 1;\n    transform: translateY(0px);\n    -webkit-transform: translateY(0px);\n  }\n  .fadedBox {\n    background-color: transparent;\n  }\n  .grid-col.boxOverlay:hover .fadedBox {\n    background-color: rgba(0, 0, 0, 0.7);\n  }\n  .col-content.col-content-a {\n    grid-column: 2 / span 1;\n    grid-row: 4;\n  }\n\n  .col-content.col-content-b {\n    grid-column: 1 / span 1;\n    grid-row: 4;\n  }\n}\n", ""]);
+
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/css/main.css":
 /*!****************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/css/main.css ***!
@@ -208,6 +223,21 @@ exports.push([module.i, "/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/stockfotos.css":
+/*!**********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/stockfotos.css ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ".ejendomsfoto {\n  background: url(\"/img/ejendomsfoto.jpg\") no-repeat center center;\n}\n\n.luftfoto {\n  background: url(\"/img/luftfoto.jpg\") no-repeat center center;\n}\n\n.taginspektion {\n  background: url(\"/img/inspektion.jpg\") no-repeat center center;\n}\n\n.byggeplads {\n  background: url(\"/img/byggeplads.jpg\") no-repeat center center;\n}\n\n.panorama {\n  background: url(\"/img/360panorama.png\") no-repeat center center;\n}\n", ""]);
+
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/css/styles.css":
 /*!******************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/css/styles.css ***!
@@ -225,6 +255,8 @@ exports.push([module.i, "@import url(https://cdnjs.cloudflare.com/ajax/libs/Swip
 exports.i(__webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./main.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/main.css"), "");
 exports.i(__webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./nav.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/nav.css"), "");
 exports.i(__webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./footer.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/footer.css"), "");
+exports.i(__webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./grid.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/grid.css"), "");
+exports.i(__webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./stockfotos.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/stockfotos.css"), "");
 exports.i(__webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./swiper.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/swiper.css"), "");
 exports.i(__webpack_require__(/*! -!../../node_modules/css-loader/dist/cjs.js!./btnHover.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/btnHover.css"), "");
 
