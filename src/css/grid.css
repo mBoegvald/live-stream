@@ -12,6 +12,7 @@
   background-size: cover;
   height: 100%;
   overflow: hidden;
+  border-radius: 0.25rem;
 }
 
 .col-tall {
@@ -19,6 +20,7 @@
 }
 .col-content {
   grid-column: span 1;
+  border-radius: 0.25rem;
 }
 
 .col-content.col-content-a {
