@@ -1,0 +1,19 @@
+.ejendomsfoto {
+  background: url("/img/ejendomsfoto.jpg") no-repeat center center;
+}
+
+.luftfoto {
+  background: url("/img/luftfoto.jpg") no-repeat center center;
+}
+
+.taginspektion {
+  background: url("/img/inspektion.jpg") no-repeat center center;
+}
+
+.byggeplads {
+  background: url("/img/byggeplads.jpg") no-repeat center center;
+}
+
+.panorama {
+  background: url("/img/360panorama.png") no-repeat center center;
+}

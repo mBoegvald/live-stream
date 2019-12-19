@@ -6,6 +6,12 @@ $product = $_POST['product'];
 
 //validation
 
+if(empty($name)||empty($customer_email))
+{
+  echo json_encode(array('status' => 'error'));
+  exit;
+}
+
 $email_subject = "Mail fra $name";
 $email_body = '<html>
 <head>

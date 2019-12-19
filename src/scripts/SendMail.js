@@ -3,7 +3,12 @@ export default class SendMail {
     $(function() {
       $("#myForm").submit(function(e) {
         e.preventDefault();
-        var form_data = $(this).serialize();
+        let form_data = $(this).serialize();
+        let name = document.querySelector("input[name=name]").value;
+        let email = document.querySelector("input[name=email]").value;
+        if (!name || !email) {
+          return alert("Navn og Email er påkrævet");
+        }
         $.ajax({
           type: "POST",
           url: "form-to-email.php",
@@ -11,7 +16,7 @@ export default class SendMail {
           data: form_data
         })
           .done(function(data) {
-            alert("Din mail er blevet sendt!");
+            alert("Din email er sendt!");
           })
           .fail(function(data) {
             alert("Noget gik galt, prøv igen.");
