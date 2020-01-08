@@ -5,6 +5,7 @@ import ShowHeader from "../scripts/ShowHeader";
 import Weather from "../scripts/Weather";
 import HideNav from "../scripts/HideNav";
 import SendMail from "../scripts/SendMail";
+import LiveStream from "../scripts/LiveStream";
 
 export default class App {
   constructor() {
@@ -15,5 +16,6 @@ export default class App {
     new Weather();
     new HideNav();
     new SendMail();
+    new LiveStream();
   }
 }
