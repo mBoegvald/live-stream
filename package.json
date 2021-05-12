@@ -11,7 +11,7 @@
   "repository": "",
   "dependencies": {
     "@babel/runtime": "^7.2.0",
-    "swiper": "^5.2.1"
+    "swiper": "^6.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
